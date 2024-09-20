@@ -1,0 +1,209 @@
+:root {
+  --text-1: var(--shade-100);
+  --text-2: var(--shade-150);
+  --surface-1: var(--page-dark);
+  --surface-2: var(--primary-900);
+  --surface-3: var(--primary-800);
+
+    --primary-tint: color-mix(in srgb, var(--primary) 3%, white);
+    --primary-dark: color-mix(in srgb, var(--primary), black 90%);
+    --primary-juicy: var(--p10-1-juicy);
+    --primary-100: color-mix(in srgb, var(--primary) 10%, white);
+    --primary-200: color-mix(in srgb, var(--primary) 25%, white);
+    --primary-300: color-mix(in srgb, var(--primary) 50%, white);
+    --primary-400: color-mix(in srgb, var(--primary) 75%, white);
+    --primary-500: var(--primary);
+    --primary-600: color-mix(in srgb, var(--primary), black 20%);
+    --primary-700: color-mix(in srgb, var(--primary), black 40%);
+    --primary-800: color-mix(in srgb, var(--primary), black 60%);
+    --primary-900: color-mix(in srgb, var(--primary), black 80%);
+
+    --secondary-tint: color-mix(in srgb, var(--secondary) 3%, white);
+    --secondary-dark: color-mix(in srgb, var(--secondary), black 90%);
+    --secondary-juicy: var(--p10-6-juicy);
+    --secondary-100: color-mix(in srgb, var(--secondary) 10%, white);
+    --secondary-200: color-mix(in srgb, var(--secondary) 25%, white);
+    --secondary-300: color-mix(in srgb, var(--secondary) 50%, white);
+    --secondary-400: color-mix(in srgb, var(--secondary) 75%, white);
+    --secondary-500: var(--secondary);
+    --secondary-600: color-mix(in srgb, var(--secondary), black 20%);
+    --secondary-700: color-mix(in srgb, var(--secondary), black 40%);
+    --secondary-800: color-mix(in srgb, var(--secondary), black 60%);
+    --secondary-900: color-mix(in srgb, var(--secondary), black 80%);
+
+    --accent-tint: color-mix(in srgb, var(--accent) 3%, white);
+    --accent-dark: color-mix(in srgb, var(--accent), black 90%);
+    --accent-juicy: var(--p10-2-juicy);
+    --accent-100: color-mix(in srgb, var(--accent) 10%, white);
+    --accent-200: color-mix(in srgb, var(--accent) 25%, white);
+    --accent-300: color-mix(in srgb, var(--accent) 50%, white);
+    --accent-400: color-mix(in srgb, var(--accent) 75%, white);
+    --accent-500: var(--accent);
+    --accent-600: color-mix(in srgb, var(--accent), black 20%);
+    --accent-700: color-mix(in srgb, var(--accent), black 40%);
+    --accent-800: color-mix(in srgb, var(--accent), black 60%);
+    --accent-900: color-mix(in srgb, var(--accent), black 80%);
+
+    --p10-1-tint: color-mix(in srgb, var(--p10-1) 3%, white);
+    --p10-1-dark: color-mix(in srgb, var(--p10-1), black 90%);
+    --p10-1-100: color-mix(in srgb, var(--p10-1) 10%, white);
+    --p10-1-200: color-mix(in srgb, var(--p10-1) 25%, white);
+    --p10-1-300: color-mix(in srgb, var(--p10-1) 50%, white);
+    --p10-1-400: color-mix(in srgb, var(--p10-1) 75%, white);
+    --p10-1-500: var(--p10-1);
+    --p10-1-600: color-mix(in srgb, var(--p10-1), black 20%);
+    --p10-1-700: color-mix(in srgb, var(--p10-1), black 40%);
+    --p10-1-800: color-mix(in srgb, var(--p10-1), black 60%);
+    --p10-1-900: color-mix(in srgb, var(--p10-1), black 80%);
+
+    --p10-2-tint: color-mix(in srgb, var(--p10-2) 3%, white);
+    --p10-2-dark: color-mix(in srgb, var(--p10-2), black 90%);
+    --p10-2-100: color-mix(in srgb, var(--p10-2) 10%, white);
+    --p10-2-200: color-mix(in srgb, var(--p10-2) 25%, white);
+    --p10-2-300: color-mix(in srgb, var(--p10-2) 50%, white);
+    --p10-2-400: color-mix(in srgb, var(--p10-2) 75%, white);
+    --p10-2-500: var(--p10-2);
+    --p10-2-600: color-mix(in srgb, var(--p10-2), black 20%);
+    --p10-2-700: color-mix(in srgb, var(--p10-2), black 40%);
+    --p10-2-800: color-mix(in srgb, var(--p10-2), black 60%);
+    --p10-2-900: color-mix(in srgb, var(--p10-2), black 80%);
+
+    --p10-3-tint: color-mix(in srgb, var(--p10-3) 3%, white);
+    --p10-3-dark: color-mix(in srgb, var(--p10-3), black 90%);
+    --p10-3-100: color-mix(in srgb, var(--p10-3) 10%, white);
+    --p10-3-200: color-mix(in srgb, var(--p10-3) 25%, white);
+    --p10-3-300: color-mix(in srgb, var(--p10-3) 50%, white);
+    --p10-3-400: color-mix(in srgb, var(--p10-3) 75%, white);
+    --p10-3-500: var(--p10-3);
+    --p10-3-600: color-mix(in srgb, var(--p10-3), black 20%);
+    --p10-3-700: color-mix(in srgb, var(--p10-3), black 40%);
+    --p10-3-800: color-mix(in srgb, var(--p10-3), black 60%);
+    --p10-3-900: color-mix(in srgb, var(--p10-3), black 80%);
+
+    --p10-4-tint: color-mix(in srgb, var(--p10-4) 3%, white);
+    --p10-4-dark: color-mix(in srgb, var(--p10-4), black 90%);
+    --p10-4-100: color-mix(in srgb, var(--p10-4) 10%, white);
+    --p10-4-200: color-mix(in srgb, var(--p10-4) 25%, white);
+    --p10-4-300: color-mix(in srgb, var(--p10-4) 50%, white);
+    --p10-4-400: color-mix(in srgb, var(--p10-4) 75%, white);
+    --p10-4-500: var(--p10-4);
+    --p10-4-600: color-mix(in srgb, var(--p10-4), black 20%);
+    --p10-4-700: color-mix(in srgb, var(--p10-4), black 40%);
+    --p10-4-800: color-mix(in srgb, var(--p10-4), black 60%);
+    --p10-4-900: color-mix(in srgb, var(--p10-4), black 80%);
+
+    --p10-5-tint: color-mix(in srgb, var(--p10-5) 3%, white);
+    --p10-5-dark: color-mix(in srgb, var(--p10-5), black 90%);
+    --p10-5-100: color-mix(in srgb, var(--p10-5) 10%, white);
+    --p10-5-200: color-mix(in srgb, var(--p10-5) 25%, white);
+    --p10-5-300: color-mix(in srgb, var(--p10-5) 50%, white);
+    --p10-5-400: color-mix(in srgb, var(--p10-5) 75%, white);
+    --p10-5-500: var(--p10-5);
+    --p10-5-600: color-mix(in srgb, var(--p10-5), black 20%);
+    --p10-5-700: color-mix(in srgb, var(--p10-5), black 40%);
+    --p10-5-800: color-mix(in srgb, var(--p10-5), black 60%);
+    --p10-5-900: color-mix(in srgb, var(--p10-5), black 80%);
+
+    --p10-6-tint: color-mix(in srgb, var(--p10-6) 3%, white);
+    --p10-6-dark: color-mix(in srgb, var(--p10-6), black 90%);
+    --p10-6-100: color-mix(in srgb, var(--p10-6) 10%, white);
+    --p10-6-200: color-mix(in srgb, var(--p10-6) 25%, white);
+    --p10-6-300: color-mix(in srgb, var(--p10-6) 50%, white);
+    --p10-6-400: color-mix(in srgb, var(--p10-6) 75%, white);
+    --p10-6-500: var(--p10-6);
+    --p10-6-600: color-mix(in srgb, var(--p10-6), black 20%);
+    --p10-6-700: color-mix(in srgb, var(--p10-6), black 40%);
+    --p10-6-800: color-mix(in srgb, var(--p10-6), black 60%);
+    --p10-6-900: color-mix(in srgb, var(--p10-6), black 80%);
+
+    --p10-7-tint: color-mix(in srgb, var(--p10-7) 3%, white);
+    --p10-7-dark: color-mix(in srgb, var(--p10-7), black 90%);
+    --p10-7-100: color-mix(in srgb, var(--p10-7) 10%, white);
+    --p10-7-200: color-mix(in srgb, var(--p10-7) 25%, white);
+    --p10-7-300: color-mix(in srgb, var(--p10-7) 50%, white);
+    --p10-7-400: color-mix(in srgb, var(--p10-7) 75%, white);
+    --p10-7-500: var(--p10-7);
+    --p10-7-600: color-mix(in srgb, var(--p10-7), black 20%);
+    --p10-7-700: color-mix(in srgb, var(--p10-7), black 40%);
+    --p10-7-800: color-mix(in srgb, var(--p10-7), black 60%);
+    --p10-7-900: color-mix(in srgb, var(--p10-7), black 80%);
+
+    a {
+      color: var(--p10-3) !important;
+      text-decoration: none;
+  
+      &:hover, :focus {
+          color: var(--p10-3-juicy) !important;
+          text-decoration: underline;
+      }
+  }
+}
+
+@media (prefers-color-scheme: light) {
+      :root {
+        --text-1: var(--shade-900);
+        --text-2: var(--shade-800);
+        --surface-1: var(--page-light);
+        --surface-2: var(--primary-200);
+        --surface-3: var(--primary-300);
+      }
+
+      a {
+        color: var(--p10-5) !important;
+    
+        &:hover, :focus {
+            color: var(--p10-5-juicy) !important;
+        }
+    }
+    }
+
+    html {
+      background: var(--surface-1);
+      color: var(--text-1);
+    }
+
+    .colour-palette {
+      width: 100%;
+    }
+
+    .swatch{
+      padding: .2ch;
+    }
+
+    .palette {
+      width: 100%;;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-rows: 8vh;     
+    }
+
+    .card {
+      display: grid;
+      gap: 1ch;
+      border-radius: .5rem;
+      background: var(--surface-2);
+      border: 1px solid var(--surface-3);
+      padding: 1rem;
+
+      &:hover {
+        background: var(--surface-3);
+      }
+    }
+  
+blockquote {
+  margin: 1em 1em 1em 3em;
+  border-left: 4px solid var(--accent);
+  padding: 2ch;
+
+  p {
+    margin: 0;
+  }
+
+  &.pullquote {
+    margin: 1em;
+    padding: 4ch;
+    border: 1px solid var(--accent-700);
+    background: var(--accent-300);
+    border-radius: .5em;
+  }
+}

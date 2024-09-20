@@ -1,0 +1,135 @@
+:popover-open {
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr 1em;
+    align-items: start;
+    border-radius: 1ch;
+    max-width: 90ch !important;
+    max-height: 90vh;
+    inset: 1ch;
+    overflow-y: scroll;
+    border: 0;
+    padding: 1.5rem;
+    
+
+    img {
+        grid-column: 2 / 3;
+        height: 10rem;
+        width: 10rem;
+        color: light-dark(var(--blk), var(--rev));
+    }
+    
+    header {
+        grid-column: 2 / 4;
+
+        .definition {
+            --fluid-type-min: .9rem;
+            --fluid-type-max: 1.8rem;
+            line-height: 1;
+            font-style: italic;
+        }
+    }
+
+    ul.details {
+        margin: 2ch 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        grid-column: 2 / 4;
+        padding: 0;
+        justify-content: space-between;
+        border-bottom: 1px solid light-dark(var(--blk), var(--rev));
+        border-top: 1px solid light-dark(var(--blk), var(--rev));
+
+
+        li {
+            padding: 2ch 0;            ;
+            display: flex;
+            flex-direction: column;
+            span {
+                text-transform: uppercase;
+                font-size: 60%;
+                font-weight: bold;
+            }
+            text-transform: capitalize;
+        }
+    }
+
+    section { 
+        grid-column: 2 / 4;
+        margin-bottom: 3rem;
+    }
+
+    h2 {text-transform: capitalize;}
+
+    .sr-only:not(:focus):not(:active) {
+      clip: rect(0 0 0 0); 
+      clip-path: inset(50%);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap; 
+      width: 1px;
+    }
+
+
+    .close-btn {
+      border: none;
+      background: none;
+      justify-self: end;
+      font-size: 1.5rem;
+      border-radius: 0.8rem;
+      grid-column: 3 /4 ;
+      margin: 0;
+      
+      [aria-hidden] {
+        filter: grayscale(0%) brightness(0);
+      }
+      
+      &:hover,
+      &:focus {
+        background: color-mix(in srgb, var(--blk) 10%, transparent);
+        filter: none;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        [aria-hidden] {
+            filter: grayscale(0%) brightness(100);
+          }
+          
+          &:hover,
+          &:focus {
+            background: color-mix(in srgb, var(--rev) 10%, transparent);
+            filter: none;
+          }
+
+      }
+
+    }
+
+    &.p10-1 {
+      background: light-dark(var(--p10-1-300), var(--p10-1-700));
+    }
+
+    &.p10-7 {
+      background: light-dark(var(--p10-7-300), var(--p10-7-700));
+    }
+
+    &.p10-2 {
+      background: light-dark(var(--p10-2-300), var(--p10-2-700));}
+
+    &.p10-3 {
+      background: light-dark(var(--p10-3-300), var(--p10-3-700));}
+
+    &.p10-4 {
+      background: light-dark(var(--p10-4-300), var(--p10-4-700));}
+
+    &.p10-5 {
+      background: light-dark(var(--p10-5-300), var(--p10-5-700));}
+
+    &.p10-6 {
+      background: light-dark(var(--p10-6-200), var(--p10-6-700));}
+    
+  &::backdrop {
+    background-color: rgba(0,0,0,0.75);
+  }
+}

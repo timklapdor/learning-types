@@ -1,0 +1,143 @@
+html {
+    block-size: 100%;
+    color-scheme: dark light;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+
+  }
+
+  body {
+    margin: 2ch 0 0 0;
+    min-block-size: 100%;
+    font-family: 'figtree', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+    display: grid;
+    grid-template-columns: 2vw 1fr 2vw;
+    align-content: space-between;
+    gap: 1vmin;
+  }
+
+  section {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: light-dark(var(--blk), var(--rev));
+  }
+
+  main {
+    grid-column: 2 / 3;
+    margin: 2ch 0 0 0;
+    display: grid;
+    gap: 2vw; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+    article {
+      // min-height: 80vh;
+      border-radius: 1ch;
+      max-width: 100%;
+      padding: 2ch;
+      img {
+        width: 100%;
+      }
+
+      button {
+        text-transform: uppercase;
+        font-size: smaller;
+        border: none;
+        padding: .5ch 1ch;
+        border-radius: .7ch;
+        margin: .5ch;
+        cursor: pointer;
+        color: var(--blk);
+        background-color: color-mix(in srgb, var(--blk) 10%, );
+
+
+        &:hover {
+          background-color: color-mix(in srgb, var(--blk) 10%, transparent);
+
+        }
+    }
+
+      p {font-size: 1.1rem;}
+      small {margin-top: 3rem;}
+      h1 {
+        margin-top: 0 !important;
+        margin-bottom: 1rem;
+      
+      }
+
+      &.p10-1 {background: var(--p10-1-500);}
+      &.p10-1-light {background: var(--p10-1-100);}
+      &.p10-1-dark {background: var(--p10-1-800);}
+      &.p10-2 {background: var(--p10-2-500);}
+      &.p10-2-dark {background: var(--p10-2-800);}
+      &.p10-3 {background: var(--p10-3-500);}
+      &.p10-3-dark {background: var(--p10-3-800);}
+      &.p10-4 {background: var(--p10-4-500);}
+      &.p10-4-dark {background: var(--p10-4-800);}
+      &.p10-5 {background: var(--p10-5-500);}
+      &.p10-5-dark {background: var(--p10-5-800);}
+      &.p10-6 {background: var(--p10-6-500);}
+      &.p10-6-dark {background: var(--p10-6-800);}
+      &.p10-7 {background: var(--p10-7-500);}
+      &.p10-7-dark {background: var(--p10-7-800);}
+      &.dark {background: var(--page-dark);}
+      &.light {background: var(--page-light);}
+      &.primary {background: var(--primary);}
+      &.primary-light {background: var(--primary-300);}
+      &.primary-dark {background: var(--primary-800);}
+      &.secondary {background: var(--secondary);}
+      &.secondary-light {background: var(--secondary-300);}
+      &.secondary-dark {background: var(--secondary-800);}
+      &.accent {background: var(--accent);}
+      &.accent-light {background: var(--accent-light);}
+      &.accent-dark {background: var(--accent-dark);}
+    }
+
+    
+    section {
+      
+
+    }
+   .p10-1 {background: var(--p10-1-500);}
+   .p10-1-light {background: var(--p10-1-200);}
+   .p10-1-dark {background: var(--p10-1-800);}
+   .p10-2 {background: var(--p10-2-500);}
+   .p10-2-light {background: var(--p10-2-200);}
+   .p10-2-dark {background: var(--p10-2-800);}
+   .p10-3 {background: var(--p10-3-500);}
+   .p10-3-light {background: var(--p10-3-200);}
+   .p10-3-dark {background: var(--p10-3-800);}
+   .p10-4 {background: var(--p10-4-500);}
+   .p10-4-light {background: var(--p10-4-200);}
+   .p10-4-dark {background: var(--p10-4-800);}
+   .p10-5 {background: var(--p10-5-500);}
+   .p10-5-light {background: var(--p10-5-200);}
+   .p10-5-dark {background: var(--p10-5-800);}
+   .p10-6 {background: var(--p10-6-500);}
+   .p10-6-light {background: var(--p10-6-200);}
+   .p10-6-dark {background: var(--p10-6-800);}
+   .p10-7 {background: var(--p10-7-500);}
+   .p10-7-light {background: var(--p10-7-200);}
+   .p10-7-dark {background: var(--p10-7-800);}
+   .dark {background: var(--page-dark);}
+   .light {background: var(--page-light);}
+   .primary {background: var(--primary);}
+   .primary-light {background: var(--primary-300);}
+   .primary-dark {background: var(--primary-800);}
+   .secondary {background: var(--secondary);}
+   .secondary-light {background: var(--secondary-300);}
+   .secondary-dark {background: var(--secondary-800);}
+   .accent {background: var(--accent);}
+   .accent-light {background: var(--accent-light);}
+   .accent-dark {background: var(--accent-dark);}
+  }

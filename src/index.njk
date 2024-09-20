@@ -1,0 +1,48 @@
+---
+title: Learning Types
+layout: base
+permalink: index.html
+---
+<main>
+<article>
+    <h1>Learning Types</h1>
+    <small> Developed by Tim Klapdor</small>
+</article>
+{%- for item in collections.types -%}
+<article class="{{ item.data.colour }}">
+    <img src="images/{{item.data.name}}.svg"/>
+    <button popovertarget="{{ item.data.name | slug }}">About {{item.data.title }}</button>
+
+    <div popover id="{{ item.data.name | slug }}" class="{{ item.data.colour }}">
+        <img src="images/{{item.data.name}}.svg"/>
+        <button class="close-btn" popovertarget="{{ item.data.name | slug }}" popovertargetaction="hide">
+            <span aria-hidden=”true”>❌</span>
+            <span class="sr-only">Close</span>
+         </button>
+
+        <header class="activity {{ item.data.name }}">
+		    <h2>{{ item.data.title }}</h2>
+	  	    <p class="definition">{{ item.data.shortDescription }}</p>
+  	    </header>
+        
+        <ul class="details">
+            <li><span>Activity </span> {{ item.data.activity }}</li>
+            <li><span>Verb </span> {{ item.data.verb }}</li>
+        </ul>
+        
+        <section class="{{item.data.activity }}">
+	        {{ item.templateContent | safe }}
+        </section>
+
+    </div>
+{# 
+    <h3>{{ item.data.title }}</h3>
+    	{{ item.content | safe }} #}
+</article>
+{%- endfor -%}
+<article>
+<article>
+    <h4>Want to learn more?</h4>
+    <p>Check out our <a href="https://learning-patterns.com">Learning Patterns</a> and visit <a href="https://patternlearning.co">Pattern Learning</a>.</p>
+</article>
+</main>

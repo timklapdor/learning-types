@@ -1,0 +1,91 @@
+---
+
+layout: base
+colours:
+    - name: Primary
+      code: primary
+    - name: Secondary
+      code: secondary
+    - name: Accent
+      code: accent
+    - name: Blue
+      code: p10-1
+    - name: Rouge
+      code: p10-2
+    - name: Orange
+      code: p10-3
+    - name: Yellow
+      code: p10-4
+    - name: Green
+      code: p10-5
+    - name: Jade
+      code: p10-6
+    - name: Purple
+      code: p10-7
+---
+
+<section>
+  <h1>Site Stylesheet</h1>
+</section>
+
+<section>
+<h2>Colour Palettes</h2>
+
+{% for item in colours %}
+<div class="colour-palette">
+    <small>{{ item.name }}</small>
+    <div class="palette">
+        <div class="swatch" style="background: var(--{{ item.code }}-tint); color: var(--{{ item.code }}-900);"><small>TINT</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-100); color: var(--{{ item.code }}-900)"><small>100</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-200); color: var(--{{ item.code }}-900)"><small>200</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-300); color: var(--{{ item.code }}-900)"><small>300</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-400); color: var(--{{ item.code }}-900)"><small>400</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-500); color: var(--{{ item.code }}-900)"><small>500</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-600); color: var(--{{ item.code }}-900)"><small>600</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-700); color: var(--{{ item.code }}-100)"><small>700</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-800); color: var(--{{ item.code }}-100)"><small>800</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-900); color: var(--{{ item.code }}-100)"><small>900</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-dark); color: var(--{{ item.code }}-100)"><small>DARK</small></div>
+        <div class="swatch" style="background: var(--{{ item.code }}-juicy); color: var(--{{ item.code }}-100)"><small>JUICY</small></div>
+    </div>
+</div>
+{% endfor %}
+</section>
+
+<section>
+  <h2>Headings</h2>
+  <h1>H1 Heading</h1>
+  <h2>H2 Heading</h2>
+  <h3>H3 Heading</h3>
+  <h4>H4 Heading</h4>
+  <h5>H5 Heading</h5>
+  <h6>H6 Heading</h6>
+</section>
+
+<section>
+    <h2>Layout</h2>
+    <blockquote>
+      <p>Lorem ipsum dolor, <a href="#">sit amet consectetur adipisicing elit</a>. Itaque doloremque modi veniam aspernatur voluptatum labore dolores perspiciatis.Lorem ipsum dolor, <a href="#">sit amet consectetur adipisicing elit</a>. Itaque doloremque modi veniam aspernatur voluptatum labore dolores perspiciatis.</p>
+    </blockquote>
+
+    <hr>
+
+    <blockquote class="pullquote">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque doloremque modi veniam aspernatur voluptatum labore dolores perspiciatis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque doloremque modi veniam aspernatur voluptatum labore dolores perspiciatis.</p>
+    </blockquote>
+</section>
+    
+<section>
+    <article>
+      <header>
+        <h2>Text Usage</h2>
+        <small>Lorem ipsum dolor</small>
+      </header>
+      <div class="card">
+        <h2>I'm a card</h2>
+        <small>Lorem ipsum dolor</small>
+        <p>Lorem ipsum dolor, <a href="#">sit amet consectetur adipisicing elit</a>. Itaque doloremque modi veniam aspernatur voluptatum
+          labore dolores perspiciatis.</p>
+      </div>
+    </article>
+  </section>

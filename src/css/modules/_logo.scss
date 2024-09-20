@@ -1,0 +1,31 @@
+svg {
+    &.logo-rev {fill: var(--rev);}
+    &.logo-blk {fill: var(--blk);}
+    &.logo-primary {fill: var(--primary-500);}
+    &.logo-secondary {fill: var(--secondary-500);}
+    &.logo-accent {fill: var(--accent-300);}
+    &.logo-p10-1 {fill: var(--p10-1);}
+    &.logo-p10-1-light {fill: var(--p10-1-200);}
+    &.logo-p10-1-dark {fill: var(--p10-1-500);}
+    &.logo-p10-2 {fill: var(--p10-2);}
+    &.logo-p10-2-light {fill: var(--p10-2-200);}
+    &.logo-p10-2-dark {fill: var(--p10-2-800);}
+    &.logo-p10-3 {fill: var(--p10-3);}
+    &.logo-p10-3-light {fill: var(--p10-3-200);}
+    &.logo-p10-3-dark {fill: var(--p10-3-800);}
+    &.logo-p10-4 {fill: var(--p10-4);}
+    &.logo-p10-4-light {fill: var(--p10-4-200);}
+    &.logo-p10-4-dark {fill: var(--p10-4-800);}
+    &.logo-p10-5 {fill: var(--p10-5);}
+    &.logo-p10-5-light {fill: var(--p10-5-300);}
+    &.logo-p10-5-dark {fill: var(--p10-5-800);}
+    &.logo-p10-6 {fill: var(--p10-6);}
+    &.logo-p10-6-light {fill: var(--p10-6-200);}
+    &.logo-p10-6-dark {fill: var(--p10-6-800);}
+    &.logo-p10-7 {fill: var(--p10-7);}
+    &.logo-p10-7-light {fill: var(--p10-7-200);}
+    &.logo-p10-7-dark {fill: var(--p10-7-800);}
+
+    .text-dark + .text {fill: var(--blk)}
+    .text-light + .text {fill: var(--rev)}
+  }

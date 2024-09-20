@@ -1,0 +1,12 @@
+main.logos {
+    & section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+
+        svg {
+            max-width: 90%;
+            max-height: 45vh;
+        }
+    }
+}

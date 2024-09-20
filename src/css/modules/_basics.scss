@@ -1,0 +1,16 @@
+hr {
+    width: 80%;;
+    border: 1px solid var(--primary);
+    border-radius: 25%;
+}
+
+article {
+    & > * + * {
+        margin-block-start: 1.5rem;
+    }
+}
+
+p {
+    max-inline-size: 75ch;
+}
+
