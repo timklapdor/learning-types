@@ -11,7 +11,7 @@
     padding: 1.5rem;
     
 
-    img {
+    picture {
         grid-column: 2 / 3;
         height: 10rem;
         width: 10rem;
@@ -93,7 +93,7 @@
 
       @media (prefers-color-scheme: dark) {
         [aria-hidden] {
-            filter: grayscale(0%) brightness(100);
+            filter: grayscale(100%) brightness(100);
           }
           
           &:hover,
