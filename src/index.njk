@@ -17,7 +17,7 @@ permalink: index.html
         <picture>
             <source srcset="images/{{item.data.name}}-rev.svg" media="(prefers-color-scheme:dark)">
                 <img src="images/{{item.data.name}}.svg"/>
-            </picture>
+        </picture>
         <button class="close-btn" popovertarget="{{ item.data.name | slug }}" popovertargetaction="hide">
             <span aria-hidden=”true”>❌</span>
             <span class="sr-only">Close</span>
